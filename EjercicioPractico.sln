@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioPractico.Libs", "EjercicioPractico.Libs\EjercicioPractico.Libs.csproj", "{9CC5DAE8-EAB2-48DC-B20B-0E25F0EE2BBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioPractico.Tests", "EjercicioPractico.Tests\EjercicioPractico.Tests.csproj", "{2433E38C-ED1E-4946-863E-62CC8234B88F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CC5DAE8-EAB2-48DC-B20B-0E25F0EE2BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC5DAE8-EAB2-48DC-B20B-0E25F0EE2BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC5DAE8-EAB2-48DC-B20B-0E25F0EE2BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC5DAE8-EAB2-48DC-B20B-0E25F0EE2BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2433E38C-ED1E-4946-863E-62CC8234B88F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2433E38C-ED1E-4946-863E-62CC8234B88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2433E38C-ED1E-4946-863E-62CC8234B88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2433E38C-ED1E-4946-863E-62CC8234B88F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
