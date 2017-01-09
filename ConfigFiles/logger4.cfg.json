@@ -1,0 +1,18 @@
+{
+    "types": "info,warning,error",
+    "sources": {
+        "console": {
+            "active": true
+        },
+        "database": {
+            "active": false,
+            "connection": "connectionString",
+            "table": "Logs"
+        },
+        "file": {
+            "active": false,
+            "name": "log",
+            "route": "C:/Temp/Logs/"
+        }
+    }
+}

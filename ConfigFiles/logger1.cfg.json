@@ -1,0 +1,18 @@
+{
+    "types": "",
+    "sources": {
+        "console": {
+            "active": true
+        },
+        "database": {
+            "active": true,
+            "connection": "connectionString",
+            "table": "Logs"
+        },
+        "file": {
+            "active": true,
+            "name": "log",
+            "route": "C:/Temp/Logs/"
+        }
+    }
+}

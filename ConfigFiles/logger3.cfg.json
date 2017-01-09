@@ -1,0 +1,18 @@
+{
+    "types": "info,warning,error",
+    "sources": {
+        "console": {
+            "active": true
+        },
+        "database": {
+            "active": true,
+            "connection": "",
+            "table": "Logs"
+        },
+        "file": {
+            "active": true,
+            "name": "log",
+            "route": ""
+        }
+    }
+}
