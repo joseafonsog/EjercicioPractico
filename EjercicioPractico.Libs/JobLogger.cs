@@ -30,10 +30,12 @@ namespace EjercicioPractico.Libs
             Database
         }
 
-        public JobLogger(string pathConfig, ILogRepository customeContext = null)
+        public JobLogger(string pathConfig = null, ILogRepository customeContext = null)
         {
             try
             {
+                if (pathConfig == null)
+                    pathConfig = AppDomain.CurrentDomain.BaseDirectory + "/logger.cfg.json";
 
                 var logConf = JObject.Parse(File.ReadAllText(pathConfig));
                 var types = (string)logConf["types"];
