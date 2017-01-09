@@ -13,7 +13,7 @@ namespace EjercicioPractico.Tests
     public class JobLoggerTest
     {
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException), "Error Code 001: It's necesary a path to the configuration file.")]
+        [ExpectedException(typeof(ArgumentException), "Error Code 001: Path to the configuration is empty.")]
         public void NeedAPathToConfigFile()
         {
             var log = new JobLogger("");
@@ -27,7 +27,7 @@ namespace EjercicioPractico.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception), "Error Code 003: It's necessary configure types logs(info,warning or error)")]
+        [ExpectedException(typeof(Exception), "Error Code 003: Please configure types logs(info,warning or error)")]
         public void MustHaveATypeConfiguration()
         {
             var log = new JobLogger(AppDomain.CurrentDomain.BaseDirectory + "/logger1.cfg.json");
@@ -41,14 +41,14 @@ namespace EjercicioPractico.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception), "Error Code 005: It's necessary configure connection and table fields")]
+        [ExpectedException(typeof(Exception), "Error Code 005: Please configure connection and table fields")]
         public void MustHaveAConectionStringToTheDatabase()
         {
             var log = new JobLogger(AppDomain.CurrentDomain.BaseDirectory + "/logger3.cfg.json");
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception), "Error Code 006: It's necessary configure route and name fields")]
+        [ExpectedException(typeof(Exception), "Error Code 006: Please configure route and name fields")]
         public void MustHaveARouteAndNameFields()
         {
             var log = new JobLogger(AppDomain.CurrentDomain.BaseDirectory + "/logger3.cfg.json");

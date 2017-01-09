@@ -44,7 +44,7 @@ namespace EjercicioPractico.Libs
                 var sourceFile = logConf["sources"]["file"];
 
                 if (string.IsNullOrEmpty(types))
-                    throw new Exception("Error Code 003: It's necessary configure types logs(info,warning or error)");
+                    throw new Exception("Error Code 003: Please configure types logs(info,warning or error)");
                 _types = types.Split(',');
                 for (var i = 0; i < _types.Count(); i++)
                 {
@@ -63,7 +63,7 @@ namespace EjercicioPractico.Libs
                     var table = (string)sourceDatabase["table"];
                     if (string.IsNullOrEmpty(connectString) || string.IsNullOrEmpty(table))
                     {
-                        throw new Exception("Error Code 005: It's necessary configure connection and table fields");
+                        throw new Exception("Error Code 005: Please configure connection and table fields");
                     }
 
                     _context = customeContext ?? new LogRepository(connectString, table);
@@ -77,7 +77,7 @@ namespace EjercicioPractico.Libs
                     var route = (string)sourceFile["route"];
                     if (string.IsNullOrEmpty(route) || string.IsNullOrEmpty(name))
                     {
-                        throw new Exception("Error Code 006: It's necessary configure route and name fields");
+                        throw new Exception("Error Code 006: Please configure route and name fields");
                     }
                     _name = name;
                     _route = route;
@@ -86,7 +86,7 @@ namespace EjercicioPractico.Libs
             }
             catch (ArgumentException)
             {
-                throw new ArgumentException("Error Code 001: It's necesary a path to the configuration file.");
+                throw new ArgumentException("Error Code 001: Path to the configuration is empty.");
             }
 
             catch (FileNotFoundException)
